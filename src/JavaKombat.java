@@ -20,6 +20,7 @@ public class JavaKombat extends JFrame {
         setTitle("Java Kombat");
         setSize(800, 600);
         setLayout(new BorderLayout());
+        setResizable(false);
 
         this.currentStage = new TheDeadPool();
         add(currentStage, BorderLayout.CENTER);
@@ -27,14 +28,7 @@ public class JavaKombat extends JFrame {
         setVisible(true);
     }
 
-    @Override
-    public void paint(Graphics g) {
-        super.paint(g);
-        g.drawImage(background, 200, 200, this);
-    }
-
     public static void main(String[] args) {
         new JavaKombat();
-        
     }
 }
