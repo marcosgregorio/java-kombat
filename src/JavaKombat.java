@@ -1,15 +1,10 @@
-import java.io.File;
-
-import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import Stages.Stage;
 import Stages.TheDeadPool;
 import Stages.ThePit;
 
 import java.awt.BorderLayout;
-import java.awt.Graphics;
 import java.awt.Image;
 
 public class JavaKombat extends JFrame {
