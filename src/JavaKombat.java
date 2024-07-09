@@ -2,7 +2,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import Stages.TheDeadPool;
-import Stages.ThePit;
 
 import java.awt.BorderLayout;
 import java.awt.Image;
