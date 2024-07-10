@@ -5,7 +5,6 @@ import java.awt.*;
 
 public class JavaKombat extends JFrame {
     private final JPanel currentStage;
-    private Image background;
 
     public JavaKombat() {
         setTitle("Java Kombat");
