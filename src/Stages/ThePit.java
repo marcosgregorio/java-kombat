@@ -19,10 +19,12 @@ final public class ThePit extends Stage {
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
+        Graphics2D g2d = (Graphics2D) g.create();
         Image forGroundBridge;
+        g2d.scale(2.25, 2.25);
         try {
             forGroundBridge = ImageIO.read(new File("assets//the-pit/bridge-forground.gif"));
-            g.drawImage(forGroundBridge, 250, 320, this);
+            g2d.drawImage(forGroundBridge, 0, 150, this);
         } catch (IOException e) {
             e.printStackTrace();
         }
