@@ -1,22 +1,20 @@
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import Stages.ThePit;
 
-import Stages.TheDeadPool;
-
-import java.awt.BorderLayout;
-import java.awt.Image;
+import javax.swing.*;
+import java.awt.*;
 
 public class JavaKombat extends JFrame {
+    private final JPanel currentStage;
     private Image background;
-    private JPanel currentStage;
 
     public JavaKombat() {
         setTitle("Java Kombat");
         setSize(800, 600);
         setLayout(new BorderLayout());
-        setResizable(false);
+        setResizable(true);
 
-        this.currentStage = new TheDeadPool();
+        this.currentStage = new ThePit();
+
         add(currentStage, BorderLayout.CENTER);
 
         setVisible(true);

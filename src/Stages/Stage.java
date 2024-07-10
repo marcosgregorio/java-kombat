@@ -1,6 +1,7 @@
 package Stages;
 
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.image.ImageObserver;
 
@@ -21,9 +22,10 @@ public class Stage extends JPanel{
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-
+            Graphics2D g2d = (Graphics2D) g.create();
+            g2d.scale(5.0, 5.0);
         if (background != null) {
-            g.drawImage(background, 200, 200, this);
+            g2d.drawImage(background, -100, -50, this);
         }
     }
 }
